@@ -1,0 +1,393 @@
+body {
+  background-color: #eaeaea;
+}
+.container {
+  padding-left: 30px;
+  width: 1000px;
+  position: relative;
+}
+.calender {
+  display: flex;
+  gap: 40px;
+}
+.date {
+  padding-left: 17px;
+  color: hsl(0deg 0% 26.27%);
+  font-weight: 600;
+}
+.year {
+  color: darkslategrey;
+  font-weight: 800;
+}
+.calender-box {
+  display: flex;
+  margin-top: 30px;
+}
+.calender-box .days {
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  display: inline-block;
+  background-color: #ffffff;
+  margin-top: 1%;
+  padding: 6px 20px;
+  text-shadow: 1px 1px rgba(255, 255, 255);
+}
+
+.dates-lists {
+  margin-top: 30px;
+  padding-left: 10px;
+  width: 900px;
+}
+
+.dates-lists .days {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 25px;
+  width: 804px;
+  height: 54px;
+}
+
+.dates-lists .days .day {
+  border: 1px groove #e1e1e1;
+  border-width: thin;
+  height: 55px;
+  font-size: large;
+  font-weight: 700;
+
+  border-bottom: none;
+}
+
+.dates-lists .days .day .day-names {
+  margin-top: -14px;
+  padding-right: 25px;
+}
+
+.dates-lists .dates {
+  width: 803px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  background-color: #ffffff;
+  font-size: 25px;
+  position: absolute;
+}
+.dates-lists .dates .all-dates {
+  border: 1px groove #e1e1e1;
+  border-width: thin;
+  height: 80px;
+  width: 113px;
+}
+.dates-lists .dates .all-dates .para-1st {
+  margin: 0;
+  height: 32px;
+  font-size: 17px;
+  font-weight: 900;
+}
+.dates-lists .dates .all-dates .para-2nd {
+  margin: 0;
+  text-align: center;
+  font-size: 15px;
+  height: 50px;
+}
+.dark-blue {
+  background-color: #5d9cfb;
+}
+
+.light-blue {
+  background-color: #99c1fe;
+}
+.most-light-blue {
+  background-color: #c3dafc;
+}
+.more-light-blue {
+  background-color: #c5d9fb;
+}
+
+.select-month {
+  outline: 0;
+  border: 0;
+  position: relative;
+  background-color: #eaeaea;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.select-year {
+  outline: 0;
+  border: 0;
+  position: relative;
+  background-color: #eaeaea;
+  cursor: pointer;
+  padding-right: 15px;
+  font-size: 16px;
+}
+
+@media (max-width: 1280px) {
+  .dates-lists {
+    width: 800px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dates-lists {
+    width: 1000px;
+  }
+  .dates-lists .days {
+    width: 770px;
+    font-size: 16px;
+  }
+  .dates-lists .dates {
+    width: 768px;
+  }
+  .dates-lists .days .day {
+    width: 108px;
+    font-size: 17px;
+  }
+  .dates-lists .dates .all-dates {
+    width: 108px;
+    height: 70px;
+  }
+  .dates-lists .dates .all-dates .para-1st {
+    font-size: 16px;
+    font-weight: 900;
+  }
+  .dates-lists .dates .all-dates .para-2nd {
+    font-size: 14px;
+    height: 39px;
+  }
+}
+
+@media (max-width: 900px) {
+  .dates-lists {
+    width: 1000px;
+  }
+  .dates-lists .days {
+    width: 664px;
+    font-size: 14px;
+    height: 44px;
+  }
+  .dates-lists .dates {
+    width: 666px;
+  }
+  .dates-lists .days .day {
+    width: 93px;
+    font-size: 14px;
+  }
+  .dates-lists .dates .all-dates {
+    width: 93px;
+    height: 72px;
+  }
+  .dates-lists .dates .all-dates .para-1st {
+    font-size: 14px;
+  }
+  .dates-lists .dates .all-dates .para-2nd {
+    font-size: 12px;
+  }
+}
+@media (max-width: 800px) {
+  .dates-lists {
+    width: 1000px;
+  }
+  .dates-lists .days {
+    width: 558px;
+    font-size: 14px;
+    height: 37px;
+  }
+  .dates-lists .dates {
+    width: 560px;
+  }
+  .dates-lists .days .day {
+    width: 78px;
+    font-size: 11px;
+  }
+  .dates-lists .days .day .day-names {
+    margin-top: -20px;
+    padding-right: 18px;
+  }
+  .dates-lists .dates .all-dates {
+    width: 78px;
+    height: 64px;
+  }
+  .dates-lists .dates .all-dates .para-1st {
+    font-size: 12px;
+    height: 30px;
+  }
+  .dates-lists .dates .all-dates .para-2nd {
+    font-size: 10px;
+    height: 33px;
+  }
+}
+@media (max-width: 700px) {
+  .dates-lists {
+    width: 1000px;
+  }
+  .dates-lists .days {
+    width: 502px;
+    font-size: 12px;
+    height: 36px;
+  }
+  .dates-lists .dates {
+    width: 503px;
+  }
+  .dates-lists .days .day {
+    width: 70px;
+    font-size: 11px;
+    height: 44px;
+  }
+  .dates-lists .days .day .day-names {
+    margin-top: -19px;
+    padding-right: 27px;
+  }
+  .dates-lists .dates .all-dates {
+    width: 70px;
+    height: 52px;
+  }
+  .dates-lists .dates .all-dates .para-1st {
+    height: 24px;
+    font-size: 10px;
+  }
+  .dates-lists .dates .all-dates .para-2nd {
+    font-size: 10px;
+    height: 28px;
+  }
+}
+@media (max-width: 550px) {
+  .dates-lists {
+    width: 1000px;
+  }
+  .dates-lists .days {
+    width: 441px;
+    font-size: 12px;
+    height: 33px;
+  }
+  .dates-lists .dates {
+    width: 441px;
+  }
+  .dates-lists .days .day {
+    width: 61px;
+    font-size: 10px;
+    height: 39px;
+  }
+  .dates-lists .days .day .day-names {
+    margin-top: -25px;
+    padding-right: 27px;
+  }
+  .dates-lists .dates .all-dates {
+    width: 61px;
+    height: 50px;
+  }
+  .dates-lists .dates .all-dates .para-1st {
+    font-size: 9px;
+  }
+  .dates-lists .dates .all-dates .para-2nd {
+    font-size: 9px;
+  }
+}
+@media (max-width: 480px) {
+  .dates-lists {
+    width: 1000px;
+  }
+  .dates-lists .days {
+    width: 362px;
+    font-size: 12px;
+    height: 33px;
+  }
+  .dates-lists .dates {
+    width: 360px;
+  }
+  .dates-lists .days .day {
+    width: 50px;
+    font-size: 10px;
+    height: 39px;
+  }
+  .dates-lists .days .day .day-names {
+    margin-top: -25px;
+    padding-right: 27px;
+  }
+  .dates-lists .dates .all-dates {
+    width: 50px;
+    height: 44px;
+  }
+  .dates-lists .dates .all-dates .para-1st {
+    font-size: 9px;
+  }
+  .dates-lists .dates .all-dates .para-2nd {
+    font-size: 9px;
+  }
+}
+@media (max-width: 405px) {
+  .container{
+    padding-left: 0px;
+  }
+  .dates-lists {
+    width: 1000px;
+  }
+  .dates-lists .days {
+    width: 334px;
+    font-size: 12px;
+    height: 31px;
+  }
+  .dates-lists .dates {
+    width: 336px;
+  }
+  .dates-lists .days .day {
+    width: 46px;
+    font-size: 10px;
+    height: 39px;
+  }
+  .dates-lists .days .day .day-names {
+    margin-top: -25px;
+    padding-right: 27px;
+  }
+  .dates-lists .dates .all-dates {
+    width: 46px;
+    height: 42px;
+  }
+  .dates-lists .dates .all-dates .para-1st {
+    font-size: 9px;
+  }
+  .dates-lists .dates .all-dates .para-2nd {
+    font-size: 9px;
+  }
+}
+@media (max-width: 377px) {
+  .container{
+    padding-left: 0px;
+  }
+  .dates-lists {
+    width: 1000px;
+  }
+  .dates-lists .days {
+    width: 287px;
+    font-size: 12px;
+    height: 31px;
+  }
+  .dates-lists .dates {
+    width: 284px;
+  }
+  .dates-lists .days .day {
+    width: 39px;
+    font-size: 10px;
+    height: 39px;
+  }
+  .dates-lists .days .day .day-names {
+    margin-top: -25px;
+    padding-right: 27px;
+  }
+  .dates-lists .dates .all-dates {
+    width: 39px;
+    height: 37px;
+  }
+  .dates-lists .dates .all-dates .para-1st {
+    font-size: 9px;
+    font-weight: 700;
+    height: 19px;
+  }
+  .dates-lists .dates .all-dates .para-2nd {
+    font-size: 8px;
+    height: 19px;
+  }
+}

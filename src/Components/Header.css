@@ -1,0 +1,48 @@
+.Header{
+    display: flex;
+    justify-content: baseline;
+    gap: 20px;
+    padding-left: 30px;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: black;
+}
+@media(max-width:900px){
+    .Header{
+        font-size: 1.9rem;
+    }
+}
+@media (max-width:800px){
+    .Header{
+        font-size: 1.7rem;
+    }
+}
+@media (max-width:700px){
+    .Header{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width:542px){
+    .Header{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:480px){
+    .Header{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:405px){
+    .Header{
+        font-size: 1.3rem;
+    padding-left: 10px;
+    }
+}
+
+@media (max-width:377px){
+    .Header{
+        font-size: 1.2rem;
+    }
+}
